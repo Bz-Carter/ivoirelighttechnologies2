@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import 'jarallax';
+declare var jarallax: any;
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
@@ -9,7 +11,7 @@ import {MDBSpinningPreloader} from 'ng-uikit-pro-standard';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit, AfterViewInit {
 
   subscription: Subscription;
 
@@ -23,6 +25,13 @@ export class AppComponent implements OnInit{
     .subscribe(() => window.scrollTo(0, 0));
 
     this.mdbSpinningPreloader.stop();
+  }
+
+
+  ngAfterViewInit() {
+    jarallax(document.querySelectorAll('.jarallax'), {
+      speed: 0.2
+    });
   }
 
  
