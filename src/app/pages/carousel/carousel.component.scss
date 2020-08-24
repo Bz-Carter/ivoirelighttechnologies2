@@ -1,0 +1,23 @@
+html,
+body,
+.view {
+  height: 88vh;
+}
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 88vh;
+}
+
+.carousel .carousel-inner {
+  height: 88vh;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 88vh;
+}
+
+.video-fluid {
+    max-width: unset;
+}
