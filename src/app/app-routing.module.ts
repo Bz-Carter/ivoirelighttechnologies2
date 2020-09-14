@@ -11,6 +11,7 @@ import { OurWorksComponent } from './pages/our-works/our-works.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PageNoteFoundComponent } from './pages/page-note-found/page-note-found.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 
 const routes: Routes = [
@@ -23,13 +24,12 @@ const routes: Routes = [
   { path: 'our-works', component: OurWorksComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'news', component: BlogComponent },
+  { path: 'faq', component: FaqComponent },
   { path: '**', component: PageNoteFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabled'
-})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

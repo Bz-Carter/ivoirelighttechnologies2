@@ -38,7 +38,7 @@
   
               <!-- Simple link -->
               <mdb-accordion-item class="no-collase">
-                <mdb-accordion-item-head routerLink="" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect><mdb-icon fas icon="home"></mdb-icon> Accueil
+                <mdb-accordion-item-head (click)="sidenav.toggle()" routerLink="" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect><mdb-icon fas icon="home"></mdb-icon> Accueil
                 </mdb-accordion-item-head>
                 <mdb-accordion-item-body></mdb-accordion-item-body>
               </mdb-accordion-item>
@@ -49,11 +49,11 @@
                 </mdb-accordion-item-head>
                 <mdb-accordion-item-body>
                   <ul>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Conception de site web</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Marché en ligne (Eshop)</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Conception d'application web</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Marketing Digital</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Gestion de résaux sociaux</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Conception de site web</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Marché en ligne (Eshop)</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Conception d'application web</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Marketing Digital</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Gestion de résaux sociaux</a></li>
 
                   </ul>
                 </mdb-accordion-item-body>
@@ -65,8 +65,8 @@
                 </mdb-accordion-item-head>
                 <mdb-accordion-item-body>
                   <ul>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Application Offline</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Application web</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Application Offline</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Application web</a></li>
                   </ul>
                 </mdb-accordion-item-body>
               </mdb-accordion-item>
@@ -77,9 +77,9 @@
                 </mdb-accordion-item-head>
                 <mdb-accordion-item-body>
                   <ul>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Identité visuelle</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Production média</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Production vidéo</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Identité visuelle</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Production média</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Production vidéo</a></li>
                   </ul>
                 </mdb-accordion-item-body>
               </mdb-accordion-item>
@@ -90,15 +90,15 @@
                 </mdb-accordion-item-head>
                 <mdb-accordion-item-body>
                   <ul>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Gestion de données</a></li>
-                    <li><a routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>App desktop & mobile</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>Gestion de données</a></li>
+                    <li><a (click)="sidenav.toggle()" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect>App desktop & mobile</a></li>
                   </ul>
                 </mdb-accordion-item-body>
               </mdb-accordion-item>
 
               <!-- Simple link -->
               <mdb-accordion-item class="no-collase">
-                <mdb-accordion-item-head routerLink="/about-us" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect><mdb-icon fas icon="users"></mdb-icon> A Propos De Nous
+                <mdb-accordion-item-head (click)="sidenav.toggle()" routerLink="/about-us" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" mdbWavesEffect><mdb-icon fas icon="users"></mdb-icon> A Propos
                 </mdb-accordion-item-head>
                 <mdb-accordion-item-body></mdb-accordion-item-body>
               </mdb-accordion-item>
@@ -145,8 +145,8 @@
             <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect><mdb-icon fas icon="comments"></mdb-icon> <span
               class="clearfix d-none d-sm-inline-block">Support</span></a>
             <div class="dropdown-menu dropdown-primary dropdown-menu-right" role="menu">
-              <a class="dropdown-item" routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Devis</a>
-              <a class="dropdown-item" routerLink="#" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Emploi</a>
+              <a class="dropdown-item" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Devis</a>
+              <a class="dropdown-item" routerLink="/bz-carter" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Emploi</a>
             </div>
           </li>
         </ul>

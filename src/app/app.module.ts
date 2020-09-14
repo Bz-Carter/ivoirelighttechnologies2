@@ -46,9 +46,10 @@ import { SoftwaresComponent } from './pages/softwares/softwares.component';
 import { PageNoteFoundComponent } from './pages/page-note-found/page-note-found.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { DesignGraphiqueComponent } from './pages/design-graphique/design-graphique.component';
+import { FaqComponent } from './pages/faq/faq.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, AboutUsComponent, OurWorksComponent, ContactUsComponent, CarouselComponent, DevWebComponent, DevMobileComponent, SoftwaresComponent, PageNoteFoundComponent, BlogComponent, DesignGraphiqueComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, AboutUsComponent, OurWorksComponent, ContactUsComponent, CarouselComponent, DevWebComponent, DevMobileComponent, SoftwaresComponent, PageNoteFoundComponent, BlogComponent, DesignGraphiqueComponent, FaqComponent],
   imports: [
     BrowserModule,
     MDBBootstrapModulesPro.forRoot(),
