@@ -47,6 +47,8 @@ import { PageNoteFoundComponent } from './pages/page-note-found/page-note-found.
 import { BlogComponent } from './pages/blog/blog.component';
 import { DesignGraphiqueComponent } from './pages/design-graphique/design-graphique.component';
 import { FaqComponent } from './pages/faq/faq.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, AboutUsComponent, OurWorksComponent, ContactUsComponent, CarouselComponent, DevWebComponent, DevMobileComponent, SoftwaresComponent, PageNoteFoundComponent, BlogComponent, DesignGraphiqueComponent, FaqComponent],
@@ -58,6 +60,7 @@ import { FaqComponent } from './pages/faq/faq.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [MDBSpinningPreloader, ToastService,
     {
