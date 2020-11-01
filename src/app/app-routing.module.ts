@@ -12,8 +12,6 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PageNoteFoundComponent } from './pages/page-note-found/page-note-found.component';
 import { FaqComponent } from './pages/faq/faq.component';
-import { OurTeamComponent } from './pages/our-team/our-team.component';
-import { DomainComponent } from './pages/domain/domain.component';
 
 
 const routes: Routes = [
@@ -27,8 +25,6 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'news', component: BlogComponent },
   { path: 'faq', component: FaqComponent },
-  { path: 'our-team', component: OurTeamComponent },
-  { path: 'field-of-activity', component: DomainComponent },
   { path: '**', component: PageNoteFoundComponent },
 ];
 
