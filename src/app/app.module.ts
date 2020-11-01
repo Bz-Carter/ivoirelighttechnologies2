@@ -49,9 +49,48 @@ import { DesignGraphiqueComponent } from './pages/design-graphique/design-graphi
 import { FaqComponent } from './pages/faq/faq.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { OurTeamComponent } from './pages/our-team/our-team.component';
+import { DomainComponent } from './pages/domain/domain.component';
+import { WebsiteComponent } from './pages/dev-web/website/website.component';
+import { EShopComponent } from './pages/dev-web/e-shop/e-shop.component';
+import { AppWebComponent } from './pages/dev-web/app-web/app-web.component';
+import { MarketingDigitalComponent } from './pages/dev-web/marketing-digital/marketing-digital.component';
+import { SocialManagementComponent } from './pages/dev-web/social-management/social-management.component';
+import { MarketingDigitalModule } from './pages/dev-web/marketing-digital/marketing-digital.module';
+import { WebsiteModule } from './pages/dev-web/website/website.module';
+import { SocialManagementModule } from './pages/dev-web/social-management/social-management.module';
+import { HomeModule } from './pages/home/home.module';
+import { OurTeamModule } from './pages/our-team/our-team.module';
+import { OurWorksModule } from './pages/our-works/our-works.module';
+import { SoftwaresModule } from './pages/softwares/softwares.module';
+import { FaqModule } from './pages/faq/faq.module';
+import { DomainModule } from './pages/domain/domain.module';
+import { DevWebModule } from './pages/dev-web/dev-web.module';
+import { DevMobileModule } from './pages/dev-mobile/dev-mobile.module';
+import { DesignGraphiqueModule } from './pages/design-graphique/design-graphique.module';
+import { ContactUsModule } from './pages/contact-us/contact-us.module';
+import { BlogModule } from './pages/blog/blog.module';
+import { AboutUsModule } from './pages/about-us/about-us.module';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, AboutUsComponent, OurWorksComponent, ContactUsComponent, CarouselComponent, DevWebComponent, DevMobileComponent, SoftwaresComponent, PageNoteFoundComponent, BlogComponent, DesignGraphiqueComponent, FaqComponent],
+  declarations: [AppComponent, 
+    HeaderComponent, 
+    FooterComponent, 
+    HomeComponent, 
+    AboutUsComponent, 
+    OurWorksComponent, 
+    ContactUsComponent, 
+    CarouselComponent, 
+    DevWebComponent, 
+    DevMobileComponent, 
+    SoftwaresComponent, 
+    PageNoteFoundComponent, 
+    BlogComponent, 
+    DesignGraphiqueComponent, 
+    FaqComponent, 
+    OurTeamComponent, 
+    DomainComponent, WebsiteComponent, EShopComponent, AppWebComponent, MarketingDigitalComponent, SocialManagementComponent
+  ],
   imports: [
     BrowserModule,
     MDBBootstrapModulesPro.forRoot(),
@@ -61,6 +100,21 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    MarketingDigitalModule,
+    WebsiteModule,
+    SocialManagementModule,
+    HomeModule,
+    OurTeamModule,
+    OurWorksModule,
+    SoftwaresModule,
+    FaqModule,
+    DomainModule,
+    DevWebModule,
+    DevMobileModule,
+    DesignGraphiqueModule,
+    ContactUsModule,
+    BlogModule,
+    AboutUsModule,
   ],
   providers: [MDBSpinningPreloader, ToastService,
     {
